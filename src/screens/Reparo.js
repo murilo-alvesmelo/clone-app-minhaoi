@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default class ScreenD extends Component{
+export default class Reparo extends Component{
     render(){
         return(
             <View style={styles.container}>

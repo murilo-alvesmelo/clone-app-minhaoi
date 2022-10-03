@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default class ScreenE extends Component{
+export default class Produtos extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <Text>Screen E</Text>
+                <Text>Screen B</Text>
             </View>
         )
     }

@@ -3,11 +3,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather'
-import ScreenA from './screens/ScreenA';
-import ScreenB from './screens/ScreenB';
-import ScreenC from './screens/ScreenC';
-import ScreenD from './screens/ScreenD';
-import ScreenE from './screens/ScreenE';
+import Inicio from './screens/Inicio';
+import Produtos from './screens/Produtos';
+import Contas from './screens/Contas';
+import Reparo from './screens/Reparo';
+import Mais from './screens/Mais';
 const Tab = createBottomTabNavigator();
 
 export default class Navigator extends Component {
@@ -46,11 +46,11 @@ export default class Navigator extends Component {
                         tabBarInactiveTintColor: 'gray',
                     })}
                 >
-                    <Tab.Screen name='Início' component={ScreenA}/>
-                    <Tab.Screen name='Produtos' component={ScreenB}/>
-                    <Tab.Screen name='Contas' component={ScreenC}/>
-                    <Tab.Screen name='Reparo' component={ScreenD}/>
-                    <Tab.Screen name='Mais' component={ScreenE}/>
+                    <Tab.Screen name='Início' component={Inicio}/>
+                    <Tab.Screen name='Produtos' component={Produtos}/>
+                    <Tab.Screen name='Contas' component={Contas}/>
+                    <Tab.Screen name='Reparo' component={Reparo}/>
+                    <Tab.Screen name='Mais' component={Mais}/>
                 </Tab.Navigator>
             </NavigationContainer>
           );
