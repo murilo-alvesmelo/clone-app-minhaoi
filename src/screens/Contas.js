@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default class ScreenC extends Component{
+export default class Contas extends Component{
     render(){
         return(
             <View style={styles.container}>
