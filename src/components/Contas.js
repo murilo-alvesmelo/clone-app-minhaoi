@@ -1,6 +1,6 @@
 import { Link } from "@react-navigation/native";
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/Feather";
 import CommonStyle from "../CommonStyle";
 
@@ -36,6 +36,9 @@ export default class Contas extends Component{
                             <Text>{this.props[0].subtitle}</Text>
                         </View>
                     </View>
+                    <TouchableOpacity style={{justifyContent: 'center'}}>
+                        <Icon name="chevron-right" color={CommonStyle.colors.green} size={25}/>
+                    </TouchableOpacity>
                 </View>
             </View>
         )
@@ -74,6 +77,8 @@ const styles = StyleSheet.create({
     },
     containerProdutos:{
         borderWidth: 0.5,
+        flexDirection: "row",
+        justifyContent: "space-between"
     },
     descricao:{
         margin: 10,
