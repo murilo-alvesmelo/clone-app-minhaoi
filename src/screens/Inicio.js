@@ -1,11 +1,24 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, Button, FlatList } from "react-native";
+import Contas from "../components/Contas";
 
 export default class Inicio extends Component{
     render(){
+        const DATA = [
+            {
+                id: '1',
+                title: 'Oi Total',
+                subtitle: '[63] 3215-5265',
+                status: true
+            }
+        ]
         return(
             <View style={styles.container}>
-                <Text>Screen A</Text>
+                <FlatList
+                    data={DATA}
+                    renderItem={({item}) => <Contas {...DATA}/>}
+                    keyExtractor={item => item.id}
+                />
             </View>
         )
     }
@@ -13,8 +26,6 @@ export default class Inicio extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        flex: 1
     }
 })
