@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
+import CommonStyle from "../CommonStyle";
 
 export default class OiProduto extends Component{
     render(){
@@ -25,11 +26,12 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 16,
         fontWeight: "bold",
-        color: 'green'
+        color: CommonStyle.colors.green,
     },
     subtitle:{
+        borderColor: 'gray',
+        marginBottom: 10,
         borderBottomWidth: 1,
-        borderColor: 'gray'
     },
     status:{
         color: 'gray',
