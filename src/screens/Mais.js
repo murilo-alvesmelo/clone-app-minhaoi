@@ -1,20 +1,18 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
+import MaisInfo from "../components/MaisInfo";
 
 export default class Mais extends Component{
     render(){
+        const DATA = [{
+            id: 1
+        }]
         return(
-            <View style={styles.container}>
-                <Text>Screen E</Text>
-            </View>
+            <FlatList
+                data={DATA}
+                keyExtractor={item => item.id}
+                renderItem={({item}) => <MaisInfo/>}
+            />
         )
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    }
-})
