@@ -10,7 +10,7 @@ export default class Contas extends Component{
             <View>
                 <Text style={styles.title}>CONTAS E PAGAMENTOS</Text>
                 <View style={styles.item}>
-                    <View style={[styles.icon, this.props[0].status == true ? {backgroundColor: CommonStyle.colors.green} : {backgroundColor: 'orange'}]}>
+                    <View style={[styles.icon, this.props[0].status == true ? {backgroundColor: CommonStyle.colors.green} : {backgroundColor: CommonStyle.colors.orange}]}>
                         {this.props[0].status === true 
                             ? <Icon name="check" color='#fff' size={20}/>
                             : <Icon name="zap-off" color='#fff' size={20}/>

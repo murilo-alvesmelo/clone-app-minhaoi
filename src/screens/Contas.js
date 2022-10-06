@@ -1,12 +1,20 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
+import MinhaConta from "../components/MinhaConta";
 
 export default class Contas extends Component{
     render(){
+        const DATA = [
+            {
+                id: 1,
+            }
+        ]
         return(
-            <View style={styles.container}>
-                <Text>Screen C</Text>
-            </View>
+            <FlatList
+                data={DATA}
+                keyExtractor={item => item.id}
+                renderItem={({item}) => <MinhaConta {...DATA}/>}
+            />
         )
     }
 }
