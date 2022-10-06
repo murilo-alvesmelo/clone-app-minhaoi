@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Button, FlatList } from "react-native";
-import Contas from "../components/Contas";
+import Contas from "../components/ContasPagamentos";
 
 export default class Inicio extends Component{
     render(){
