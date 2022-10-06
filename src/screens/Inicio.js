@@ -8,7 +8,7 @@ export default class Inicio extends Component{
             {
                 id: '1',
                 title: 'Oi Total',
-                subtitle: '[63] 3215-5265',
+                subtitle: '[63] 6363-6363',
                 status: true
             }
         ]

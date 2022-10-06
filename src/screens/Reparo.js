@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
 
 export default class Reparo extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <Text>Screen D</Text>
+                <ActivityIndicator size='large'/>
             </View>
         )
     }

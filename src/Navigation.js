@@ -15,6 +15,7 @@ export default class Navigator extends Component {
         return (
             <NavigationContainer>
                 <Tab.Navigator
+                    initialRouteName='Mais'
                     screenOptions={({ route })=>({
                         headerStyle:{
                             backgroundColor: '#282828',
