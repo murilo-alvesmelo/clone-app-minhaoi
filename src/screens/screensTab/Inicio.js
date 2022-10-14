@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Button, FlatList } from "react-native";
-import Contas from "../components/ContasPagamentos";
+import Contas from "../../components/ContasPagamentos";
 
 export default class Inicio extends Component{
     render(){
@@ -16,7 +16,7 @@ export default class Inicio extends Component{
             <View style={styles.container}>
                 <FlatList
                     data={DATA}
-                    renderItem={({item}) => <Contas {...DATA}/>}
+                    renderItem={({item}) => <Contas {...DATA} {...this.props}/>}
                     keyExtractor={item => item.id}
                 />
             </View>

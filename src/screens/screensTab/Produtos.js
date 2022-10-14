@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
-import OiProduto from "../components/OiProduto";
+import OiProduto from "../../components/OiProduto";
 
 export default class Produtos extends Component{
 
