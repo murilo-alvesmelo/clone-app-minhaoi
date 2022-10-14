@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
-import MinhaConta from "../components/MinhaConta";
+import MinhaConta from "../../components/MinhaConta";
 
 export default class Contas extends Component{
     render(){

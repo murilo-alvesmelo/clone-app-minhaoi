@@ -7,7 +7,7 @@ import CommonStyle from "../CommonStyle";
 export default class Contas extends Component{
     render(){
         return(
-            <View>
+            <View style={styles.container}>
                 <Text style={styles.title}>CONTAS E PAGAMENTOS</Text>
                 <View style={styles.item}>
                     <View style={[styles.icon, this.props[0].status == true ? {backgroundColor: CommonStyle.colors.green} : {backgroundColor: CommonStyle.colors.orange}]}>
@@ -36,7 +36,7 @@ export default class Contas extends Component{
                             <Text>{this.props[0].subtitle}</Text>
                         </View>
                     </View>
-                    <TouchableOpacity style={{justifyContent: 'center'}}>
+                    <TouchableOpacity style={{justifyContent: 'center'}} onPress={() => this.props.navigation.navigate('Produtos')}>
                         <Icon name="chevron-right" color={CommonStyle.colors.green} size={25}/>
                     </TouchableOpacity>
                 </View>
@@ -46,13 +46,15 @@ export default class Contas extends Component{
 }
 
 const styles = StyleSheet.create({
-    
+    container: {
+        backgroundColor: '#fff',
+    },
     title:{
         fontSize: 16,
         fontWeight: 'bold',
         color: '#1a1a1a',
         margin: 10,
-        marginTop: 20
+        marginTop: 20,
     },
     item: {
         borderWidth: 0.5,

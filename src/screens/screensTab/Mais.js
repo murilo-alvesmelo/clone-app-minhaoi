@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
-import MaisInfo from "../components/MaisInfo";
+import MaisInfo from "../../components/MaisInfo";
 
 export default class Mais extends Component{
     render(){

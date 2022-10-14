@@ -18,9 +18,10 @@ export default class OiProduto extends Component{
 
 const styles = StyleSheet.create({
     item: {
+        backgroundColor: '#fff',
         borderTopWidth: 1,
         borderColor: 'gray',
-        margin: 10,
+        padding: 10,
         borderBottomWidth: 1,
     },
     title: {

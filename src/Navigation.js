@@ -1,14 +1,18 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather'
-import Inicio from './screens/Inicio';
-import Produtos from './screens/Produtos';
-import Contas from './screens/Contas';
-import Reparo from './screens/Reparo';
-import Mais from './screens/Mais';
+import Inicio from './screens/screensTab/Inicio';
+import Produtos from './screens/screensTab/Produtos';
+import Contas from './screens/screensTab/Contas';
+import Reparo from './screens/screensTab/Reparo';
+import Mais from './screens/screensTab/Mais';
+import DebitoAuto from './screens/DebitoAutomatico';
+
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
 export default class Navigator extends Component {
     render(){
